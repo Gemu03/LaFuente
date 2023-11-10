@@ -1,8 +1,158 @@
-body{
-  font-family: lato, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
+
+body{
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  text-align: center;
+  overflow-x : hidden;
+}
+
+nav{
+  background-color:blue ;
+  position:sticky;
+  top: 0;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  & img{
+    height: 100%;
+    width: auto;
+  }
+  & div.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    max-width: 70%;
+    padding-left: 20em;
+    & button{
+      background-color: transparent;
+      width: 60%;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 1rem;
+      cursor: pointer;
+      font-weight: 700;
+      &:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+      &:not(:hover){
+        transform: scale(1);
+        transition: all 0.1s ease-in-out;
+      }
+      & a{text-decoration: none;}
+    }
+  }
+  & a{
+    text-decoration: none;
+    color: inherit;
+    & button{
+      background-color: transparent;
+      color: white;
+      display: flex;
+      flex-shrink: 10;
+    }
+  }
+}
+
+div#inicio{
+  background-color: rgb(0, 255, 153);
+  /* Pag 1 */
+}
+
+
+
+
+
+/* ! No se por que no sirve💀💀💀💀💀 */
+/* div.testimonial-section{
+  background-color: blueviolet;
+  & .container{
+    max-width: 1140px;
+    margin:auto;
+    & div.row{
+      display: flex;
+      flex-wrap: wrap;
+      & section-title{
+        padding: 0 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        & h2{
+          display: inline-block;
+          font-size: 30px;
+          font-weight: 700;
+          color: var(--main_black);
+          text-transform: uppercase;
+          margin: 0;
+          & ::before{
+            content: attr(data-heading);
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--main-yellow)
+          }
+        }
+      }
+      & div.testimonial-container{
+        padding: 20px 30px;
+        & div.progress-bar-testimonial{
+          background-color: #1F1E74;
+          height: 4px;
+          width: 100%;
+          animation: grow 10s linear infinite;
+          transform-origin: left;
+        }
+        & div.fa-quote{
+          color: var(--main_dark-blue);
+          font-size: 28px;
+          position: absolute;
+          top: 70px;
+        }
+        & div.fa-quote-right{
+          left:40px
+        }
+        & div.fa-quote-left{
+          right:40px
+        }
+        & p.testimonial{
+          line-height: 28px;
+          text-align: justify;
+        }
+        & div.user{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          & .user-image{
+            border-radius: 50%;
+            height: 75px;
+            width: 75px;
+            object-fit: cover;
+          }
+          & div.user-details {
+            margin: 30px 0 0 40px;
+            & h4.username{
+              margin: 0;
+              color: var(--main_dark-blue);
+              font-weight: bold;
+            }
+            & p.role{
+              font-weight: normal;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+} */
