@@ -18,7 +18,7 @@
 <body>
 
   <!-- header start -->
-  <header class="nav" id="inicio">
+  <header class="nav">
     <div class="logo">
       <img src="./assets/img/LaFuenteLogo.png" alt="Logo del colegio la fuente">
     </div>
@@ -36,7 +36,12 @@
   <!-- header end -->
   
   <!-- Slider start-->
-  <div class="slider">
+  <div class="slider" id="inicio">
+    <article class="cover">
+      <h1>Hola</h1>
+      <a href=""><button>Busqueda</button></a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias tenetur labore velit, debitis officiis ex repellat obcaecati aut earum accusamus non ab minima consequuntur quo eaque at neque pariatur mollitia quasi illum, veniam repudiandae. Nihil ab minima dolores reprehenderit. Veritatis delectus accusamus, velit tempore atque perspiciatis sint optio nihil.</p>
+    </article>
     <div class="list">
         <div class="item">
             <img src="./assets/img/carrusel/1.jpg" alt="">
@@ -68,7 +73,7 @@
 </div>
 
   <!-- description section start -->
-  <section class="description_main"></section>
+  <section class="description_main" id="quienes-somos"></section>
   <article class="description_texts">
 
     <h1 class="description_title">"¿Quienes somos?"</h1>
@@ -103,7 +108,7 @@
 
 
   <!-- testimonial section start -->
-  <div class="testimonial-section section" id="testimonial">
+  <div class="testimonial-section section" id="testimonio">
     <div class="container">
       <div class="row">
         <div class="section-title">
@@ -131,8 +136,53 @@
       </div>
     </div>
   </div>
-  
   <!-- testimonial section end -->
+
+
+
+
+    <!-- about section start -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="main info">About me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box inner-shadow">
+              <img src="./assets/img/LaFuenteLogo.png" class="outer-shadow" alt="profile-pic">
+            </div>
+            <!-- social links start -->
+            <div class="social-links">
+              <a href="https://github.com/JohnRojas0628" class="outer-shadow hover-in-shadow"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://co.linkedin.com/in/john-jairo-rojas-johnjdev?trk=profile-badge"
+                class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/573212335821" class="outer-shadow hover-in-shadow"><i
+                  class="fab fa-whatsapp"></i></a>
+            </div>
+            <!-- social links end -->
+          </div>
+          <div class="about-info">
+            <p><span>Hi! My name is John J Rojas. I am a web developer.<span>
+                  <p>
+                  <p>I am 22 years old and I live in the city of Bogotá, I am an active student of computer engineering at the University of Sabana, currently in my fourth semester, I am also passionate about the world of technology, I attended a bootcamp at the Educamas Foundation in which I trained as a front-end web programmer.<br><br>
+  
+  
+                    I consider myself to be a determined and risky person, I love challenges and in my daily life they are
+                    not lacking, this helps me to grow daily as a person and as a professional.</p>
+                  <a href="./pages/cv-page.html" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+                  <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
 </body>
 <script src="js/script.js"></script> <!-- ? Añadir todos los js que se requieran -->
 </html>
