@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="css/main.css"> <!-- ? Añadir todas las hojas de Estilos que se requieran -->
   <link rel="icon" type="image/png" href="./assets/img/LaFuenteLogo.png">
   <!-- ? Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/603d097ec5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><!-- font awesome -->
 </head>
 
 <body>
 
   <!-- header start -->
-  <header class="header">
+  <header class="nav">
     <div class="logo">
       <img src="./assets/img/LaFuenteLogo.png" alt="Logo del colegio la fuente">
     </div>
@@ -32,12 +32,25 @@
     <a href="#" class="btn"><button>Busqueda</button></a>
   </header>
   <!-- header end -->
-    <!-- Carrusel-->
-  <div class="carrousel">
+  
+  <!-- Slider start-->
+  <div class="slider">
     <div class="list">
-        <div class="item"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="item"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="item"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+        <div class="item">
+            <img src="./assets/img/carrusel/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="/assets/img/carrusel/2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="/assets/img/carrusel/3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="/assets/img/carrusel/4.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="/assets/img/carrusel/5.jpg" alt="">
+        </div>
     </div>
     <div class="buttons">
         <button id="prev"><</button>
@@ -47,77 +60,77 @@
         <li class="active"></li>
         <li></li>
         <li></li>
-
+        <li></li>
+        <li></li>
     </ul>
 </div>
 
-<!-- testimonial section start -->
-<section class="description_main"></section>
+  <!-- description section start -->
+  <section class="description_main"></section>
   <article class="description_texts">
 
-      <h1 class="description_title">"¿Quienes somos?"</h1>
-      <p class="description_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ab possimus sunt animi magni cupiditate!</p>
-      <a href="#" class="description_btn"><button>Busqueda</button></a>
+    <h1 class="description_title">"¿Quienes somos?"</h1>
+    <p class="description_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ab possimus sunt animi
+      magni cupiditate!</p>
+    <a href="#" class="description_btn"><button>Busqueda</button></a>
     </div>
   </article>
-  <div class="sliders-section">
-    <div class="slider left-slider">
-      <div class="slide-track1">
-        <div class="slide"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+  <div class="band-section">
+    <div class="band left-band">
+      <div class="band-track1">
+        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
       </div>
     </div>
-    <div class="slider right-slider">
-     <div class="slide-track2">
-        <div class="slide"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="slide"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+    <div class="band right-band">
+      <div class="band-track2">
+        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
       </div>
     </div>
   </div>
-</section>
+  </section>
 
 
- <!-- testimonial section start -->
- <div class="testimonial-section section" id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
-        <h2 data-heading="testimonial">Client Speak</h2>
-      </div>
-      <div class="testimonial-container outer-shadow">
-        <div class="progress-bar-testimonial"></div>
-        <div class="fas fa-quote-right fa-quote"></div>
-        <div class="fas fa-quote-left fa-quote"></div>
-        <p class="testimonial">
-          I've worked with literally hundreds of HTML/CSS developers and I have to
-          say the top spot goes to this guy. This guy is an amazing developer. He
-          stresses on good, clean code and pays heed to the details. I love
-          developers who respect each and every aspect of a throughly thought out
-          design and do their best to put it in code.
-        </p>
-        <div class="user">
-          <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="user" class="user-image" />
-          <div class="user-details">
-            <h4 class="username">Elizabeth Gutierrez</h4>
-            <p class="role">Lawyer - Prochampions S.A.S.</p>
+  <!-- testimonial section start -->
+  <div class="testimonial-section section" id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-heading="testimonial">Client Speak</h2>
+        </div>
+        <div class="testimonial-container outer-shadow">
+          <div class="progress-bar-testimonial"></div>
+          <div class="fas fa-quote-right fa-quote"></div>
+          <div class="fas fa-quote-left fa-quote"></div>
+          <p class="testimonial">
+            I've worked with literally hundreds of HTML/CSS developers and I have to
+            say the top spot goes to this guy. This guy is an amazing developer. He
+            stresses on good, clean code and pays heed to the details. I love
+            developers who respect each and every aspect of a throughly thought out
+            design and do their best to put it in code.
+          </p>
+          <div class="user">
+            <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="user" class="user-image" />
+            <div class="user-details">
+              <h4 class="username">Elizabeth Gutierrez</h4>
+              <p class="role">Lawyer - Prochampions S.A.S.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- testimonial section end -->
-
+  
+  <!-- testimonial section end -->
 </body>
-
 <script src="js/script.js"></script> <!-- ? Añadir todos los js que se requieran -->
-
 </html>
