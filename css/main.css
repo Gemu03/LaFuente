@@ -10,6 +10,8 @@
   --main_dark-blue: #1F1E74;
   --main_black: #000000;
   --main-white: #ECEAE7;
+  --contact-background: #7282BE;
+  --contact-fontcolor: rgb(0, 0, 0);
 }
 
 * {
@@ -469,4 +471,59 @@ about section
 }
 .about-section .about-img .social-links a:hover{
   color: #1F1E74;
+}
+/*------------
+Contact
+------------*/
+.contact_section{
+  padding: 0 0 0 0;
+  min-height: 100vh;
+  background-color: var(--contact-background);
+  display:grid;
+  grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */ /* Espacio entre elementos */
+}
+
+.formulario-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--contact-background);
+  border-radius: 8px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+.formContacto{
+  color: var(--contact-fontcolor);
+  text-align: center;
+  font-size: 50px;
+}
+
+label {
+  color: white;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #217dbb;
 }
