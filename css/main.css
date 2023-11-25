@@ -546,7 +546,6 @@ footer{
   color:#fff;
   & ul.footer_lista1{
     padding: 0 0 0 30%;
-    /*background-color: #06A241;*/
     border-left: 2px solid #ffffff;
     display: flex;
     justify-content:  center;
@@ -575,10 +574,24 @@ footer{
     font-size: 25px;
     padding-top: 30%;
   }
-  hr{
-    padding: 10px 0 10px 0;
-  }   
 }
+.footerparte2{
+  display: grid;
+  grid-template-columns: 40% 40% auto;
+  padding: 30px;
+  & p{
+    font-size: 15px;
+  }
+  & .conexiones{
+    display: flex;
+    justify-content: end;
+    & i{
+      padding-left: 30px;
+    }
+  }
+  
+}
+
 
 
 
