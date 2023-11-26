@@ -10,6 +10,8 @@
   --main_dark-blue: #1F1E74;
   --main_black: #000000;
   --main-white: #ECEAE7;
+  --contact-background: #7282BE;
+  --contact-fontcolor: rgb(0, 0, 0);
 }
 
 * {
@@ -470,60 +472,126 @@ about section
 .about-section .about-img .social-links a:hover{
   color: #1F1E74;
 }
+/*------------
+Contact
+------------*/
+.contact_section{
+  padding: 0 0 0 0;
+  min-height: 100vh;
+  background-color: var(--contact-background);
+  display:grid;
+  grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */ /* Espacio entre elementos */
+}
 
+.formulario-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--contact-background);
+  border-radius: 8px;
+}
 
-section.description_main{
-  display: flex;
-  justify-content: center;
-  gap: 5%;
-  align-items: center;
-  font-size: large;
+form {
+  display: grid;
+  gap: 15px;
+}
+.formContacto{
+  color: var(--contact-fontcolor);
   text-align: center;
-  
-  & div{
-    flex: 1;
-    max-width: 25%;
-    overflow: hidden;
-    background-color: #000000ab;
-    height: 65%;
-    width: 30%;
-    border-radius: 30px;
-    color: white;
+  font-size: 50px;
+}
+
+label {
+  color: white;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #217dbb;
+}
+
+
+/*------------
+footer
+------------*/
+footer{
+  padding: 50px 8% 0 8%;
+  height: 50vh;
+  background-color:#1F1E74; /*variable fondo de color*/
+  justify-content: center;
+}
+.footerparte1{
+  display:grid;
+  grid-template-columns: 20% 15% 30% 30%;
+  grid-gap: 10px;
+  background-color: #1F1E74;
+  color:#fff;
+  & ul.footer_lista1{
+    padding: 0 0 0 30%;
+    border-left: 2px solid #ffffff;
     display: flex;
-    padding: 0px 4%;
+    justify-content:  center;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    & h3{
-      font-size: 1.7rem;
-      font-weight: 600;
-    }
-    & p{
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
-    & button.contacto{
-      font-size: 1.7rem;
-      background-color: #FAE915;
-      border-radius: 20px;
-      padding: 10px 20px;
-      font-weight: 600;
-      border: none;
-    }
-    & button:hover{
-      transform: scale(1.1);
-      transition: 0.5s ease-in-out;
-    }
-    & :not(:hover){
-      transform: scale(1);
-      transition: 0.5s ease-in-out;
-    }
-/*   background-image: url("ruta_de_la_imagen.jpg");
-  background-size: cover;
-  background-position: center; */
-    & img{
-      width: 100%;
-      display: none;
+    list-style-type: none;
+    & li{
+      padding: 15px;
     }
   }
+  & ul.footer_lista2{
+    padding: 0 0 0 10%;
+    border-left: 2px solid #ffffff;
+    display: flex;
+    justify-content:  center;
+    flex-direction: column;
+    list-style-type: none;
+    & li{
+      padding: 10px;
+    }
+  }
+  & embed{
+    padding: 12% 0 0 0;
+    width: 30vh;
+  }
+  & h1{
+    font-size: 25px;
+    padding-top: 30%;
+  }
 }
+.footerparte2{
+  display: grid;
+  grid-template-columns: 40% 40% auto;
+  padding: 30px;
+  & p{
+    font-size: 15px;
+  }
+  & .conexiones{
+    display: flex;
+    justify-content: end;
+    & i{
+      padding-left: 30px;
+    }
+  }
+  
+}
+
+
+
+
