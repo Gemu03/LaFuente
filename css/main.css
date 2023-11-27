@@ -11,7 +11,6 @@
   --main_black: #000000;
   --main-white: #ECEAE7;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +18,6 @@
   font-family: 'poppins', sans-serif;
   font-size: 20px;
 }
-
 /*Desplazamiento de scroll*/
 html {
   scroll-behavior: smooth;
@@ -27,13 +25,33 @@ html {
 section[id]{
   scroll-margin-top: 85px;
 }
-
-.section-title {
+.section-half-title {
   padding: 0 15px;
-  flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
   margin-bottom: 60px;
+}
+.section-half-title h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main_black);
+  text-transform: uppercase;
+  margin: 0;
+}
+.section-half-title h2:before {
+  content: attr(data-heading);
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--main-yellow)
+}
+.section-title {
+  padding: 0 15px;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  flex: 0 0 100%;
 }
 .section-title h2 {
   display: inline-block;
@@ -43,7 +61,6 @@ section[id]{
   text-transform: uppercase;
   margin: 0;
 }
-
 .section-title h2:before {
   content: attr(data-heading);
   display: block;
@@ -65,29 +82,23 @@ section[id]{
 .nav .active{
   background-color: #09870d;
 }
-
 .nav .logo {
   cursor: pointer;
 }
-
 .nav .logo img {
   height: 70px;
   width: auto;
 }
-
 .nav .nav-links {
   list-style: none;
 }
-
 .nav .nav-links li {
   display: inline-block;
   padding: 0px 20px;
 }
-
 .nav .nav-links li:hover {
   transform: scale(1.1);
 }
-
 .nav .nav-links li a {
   color: #fff;
   text-decoration: none;
@@ -184,7 +195,6 @@ z-index: 8;
       height: 400px;
   }
 }
-
 .slider .cover{
   position: absolute;
   width: 100%;
@@ -208,52 +218,61 @@ p {
 
 
 /*description section start*/
-.description_main {
+.description-main {
   display: flex;
-  background-color: rgb(0, 115, 255);
-  width: 100%;
+  background-color: -var(--main-white);
   justify-content: center;
   height: 100vh;
 }
 
-.description_texts {
+.description {
   display: flex;
   width: 50%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-sizing: border-box
+  padding: 50px;
+  box-sizing: border-box;
 }
 
-.elementos {
+.description h1 {
   width: 100%;
-  background-color: #1F1E74;
 }
-
-.elementos h1 {
-  font-size: 24px;
+.description p .diferente-estilo  {
+  font-size: 40px;
+  color: #1F1E74;
+  font-weight: bold;
 }
-
-.elementos p {
-  font-size: 16px;
+.description p {
+  font-size: 40px;
   margin: 10px 0;
+  color: #000000;
 }
-
-.elementos .btn {
-  text-align: center;
+.description .btn {
+  padding: 9px 25px;
+  background-color: #FAE915;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
 }
-
 .band-section {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   flex: 0.5;
-  width: 50%;
-  box-sizing: border-box
+  padding: 20px;
+  width: 55%;
+  box-sizing: border-box;
 }
+
 .band {
-  width: 49vw;
-  height: 100vh;
+  width: 50vw;
+  height: 95vh;
+  padding: 10px;
+  padding: auto;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -262,27 +281,20 @@ p {
   box-sizing: border-box;
 }
 
-
 .left-band {
-  align-items: left;
+  align-items: flex-start; 
 }
-
-.right-band {
-  align-items: flex-end;
-}
-
 .left-band .band-track1 {
   animation: scroll-up 0.1s linear infinite;
-  -webkit-animation: scroll-up 10s linear infinite;
+  -webkit-animation: scroll-up 20s linear infinite;
   display: flex;
   flex-direction: column;
   height: auto;
   width: auto;
 }
-
 .right-band .band-track2 {
   animation: scroll-down 0.1s linear infinite;
-  -webkit-animation: scroll-down 10s linear infinite;
+  -webkit-animation: scroll-down 20s linear infinite;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -298,7 +310,7 @@ p {
   font-size: 24px;
 }
 
-.band .band img {
+.band img {
   width: 100%;
   height: 100%;
 }
@@ -307,9 +319,8 @@ p {
   0% {
     transform: translateY(0);
   }
-
   100% {
-    transform: translateY(calc(-10vh * 3));
+    transform: translateY(calc(-10vh * 7));
   }
 }
 
@@ -319,17 +330,50 @@ p {
   }
 
   100% {
-    transform: translateY(calc(10vh * 3));
+    transform: translateY(calc(10vh * 7));
   }
 }
 
-/* testimonial section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------testimonial section start----------------*/
 .testimonial-section {
   padding: 120px 0 0 0;
   min-height: 100vh;
   background-color: var(--main-blue);
 }
-
 .testimonial-container {
   background-color: var(--main-white);
   border-radius: 15px;
@@ -338,60 +382,49 @@ p {
   max-width: 768px;
   position: relative;
 }
-
 .testimonial-container p {
   padding-bottom: 30px;
   color: var(--main_black)
 }
-
 .fa-quote {
   color: var(--main_dark-blue);
   font-size: 28px;
   position: absolute;
   top: 70px;
 }
-
 .fa-quote-right {
   left: 40px;
 }
-
 .fa-quote-left {
   right: 40px;
 }
-
 .testimonial {
   line-height: 28px;
   text-align: justify;
 }
-
 .user {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .user .user-image {
   border-radius: 50%;
   height: 75px;
   width: 75px;
   object-fit: cover;
 }
-
 .user .user-details {
   margin: 30px 0 0 40px;
 }
-
 .user .username {
   margin: 0;
   color: var(--main_dark-blue);
   font-weight: bold;
 }
-
 .user .role {
   font-weight: normal;
   margin: 10px 0;
 }
-
 .progress-bar-testimonial {
   background-color: #1F1E74;
   height: 4px;
@@ -399,18 +432,15 @@ p {
   animation: grow 10s linear infinite;
   transform-origin: left;
 }
-
 @keyframes grow {
   0% {
     transform: scaleX(0);
   }
 }
-
 @media (max-width: 768px) {
   .testimonial-container {
     padding: 20px 30px;
   }
-
   .fa-quote {
     display: none;
   }
@@ -423,9 +453,8 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-/*----------------
-about section
-----------------*/
+/*----------------testimonial section end----------------*/
+/*----------------about section start----------------*/
 .about-section{
   padding: 80px 0 0;
   min-height: 100vh;
@@ -470,3 +499,4 @@ about section
 .about-section .about-img .social-links a:hover{
   color: #1F1E74;
 }
+/*----------------about section start----------------*/
