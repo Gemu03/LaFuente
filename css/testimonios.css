@@ -50,26 +50,26 @@ section.testimonial-section {
   
   }
   
-  .progress-bar-testimonial {
+  .progress-bar-testimonial { /*barra de progreso*/
     background-color: #1F1E74;
     height: 4px;
     width: 100%;
     animation: grow 10s linear infinite;
     transform-origin: left;
   }
-  .fa-quote {
+  .fa-quote {/*Comillas*/
     color: var(--main_dark-blue);
     font-size: 28px;
     position: absolute;
     top: 70px;
   }
-  .fa-quote-right {
+  .fa-quote-right {/*Comillas*/
     left: 40px;
   }
-  .fa-quote-left {
+  .fa-quote-left {/*Comillas*/
     right: 40px;
   }
-  @keyframes grow {
+  @keyframes grow { /*funcion*/
     0% {
       transform: scaleX(0);
     }
