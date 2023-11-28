@@ -43,11 +43,12 @@ background-color: #fff;
 color: #1F1E74;
 transform: scale(1.1);
 }
-/*Inicio de mejorar*/
+
+
 /*NAV*/
 .navBarra {
   /*position: fixed;*/
-  background-color: #3e3bc4;
+  background-color: #1F1E74;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,10 +81,6 @@ transform: scale(1.1);
     }
   }
 }
-
-
-
-
 
 /*carrusel*/
 
