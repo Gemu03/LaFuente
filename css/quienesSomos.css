@@ -9,6 +9,14 @@
       grid-area: Article;
       text-align: center;
       padding: 50px;
+      & h2 {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--main_black);
+        text-transform: uppercase;
+        margin: 0;
+      }
       & p{
           font-size: 40px;
           margin: 10px 0;
@@ -19,17 +27,17 @@
             font-weight: bold;
           }
         }
-        & button.btn{
-          padding: 9px 25px;
-          background-color: #FAE915;
-          border: none;
-          border-radius: 50px;
-          cursor: pointer;
-          font-size: 20px;
-          font-weight: bold;
-          transition: all 0.3s ease 0s;
-        }
+      & button.btn{
+        padding: 9px 25px;
+        background-color: #FAE915;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
       }
+    }
     & div.band-section {
       display: flex; 
       grid-area: Band-section;
@@ -69,7 +77,6 @@
     }
   }
   
-  
   @keyframes scroll-up {
     0% {
       transform: translateY(0);
@@ -88,3 +95,4 @@
       transform: translateY(calc(10vh * 7));
     }
   }
+/*Hacer Responsive con grid*/

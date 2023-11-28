@@ -27,68 +27,7 @@ section[id]{
 }
 /*Inicio de mejorar*/
 /*NAV*/
-/*carrusel*/
-
-.section-half-title {
-  padding: 0 15px;
-  max-width: 100%;
-  text-align: center;
-  margin-bottom: 60px;
-}
-.section-half-title h2 {
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--main_black);
-  text-transform: uppercase;
-  margin: 0;
-}
-.section-half-title h2:before {
-  content: attr(data-heading);
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--main-yellow)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section-title {
-  padding: 0 15px;
-  max-width: 100%;
-  text-align: center;
-  margin-bottom: 60px;
-  flex: 0 0 100%;
-}
-.section-title h2 {
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--main_black);
-  text-transform: uppercase;
-  margin: 0;
-}
-.section-title h2:before {
-  content: attr(data-heading);
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--main-yellow)
-}
-.nav {
+.navBarra {
   position: fixed;
   background-color: #3e3bc4;
   display: flex;
@@ -98,52 +37,60 @@ section[id]{
   width: 100vw;
   padding: 5px 10%;
   z-index: 999;
+  & div.logo img{
+    height: 70px;
+    width: auto;
+    cursor: pointer;
+  }
+  & nav ul{
+    list-style: none;
+    & li{
+      display: inline-block;
+      padding: 0px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      & a{
+        color: #fff;  
+        text-decoration: none;
+      }
+      & a:hover{
+        color: #FAE915;
+      }
+    }
+    & li:hover{
+      transform: scale(1.1);
+    }
+  }
+  & button{
+    padding: 9px 25px;
+    background-color: #FAE915;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+  }
+  & button:hover{
+    background-color: #fff;
+    color: #1F1E74;
+    transform: scale(1.1);
+  }
 }
-.nav .active{
+
+
+
+
+/*carrusel*/
+
+
+
+
+/*Carrusel Start*/
+
+.active{
   background-color: #09870d;
 }
-.nav .logo {
-  cursor: pointer;
-}
-.nav .logo img {
-  height: 70px;
-  width: auto;
-}
-.nav .nav-links {
-  list-style: none;
-}
-.nav .nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-.nav .nav-links li:hover {
-  transform: scale(1.1);
-}
-.nav .nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-.nav .nav-links li a:hover {
-  color: #FAE915;
-}
-.nav .btn button {
-  padding: 9px 25px;
-  background-color: #FAE915;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease 0s;
-}
-.nav .btn button:hover {
-  background-color: #fff;
-  color: #1F1E74;
-  transform: scale(1.1);
-}
-/*Carrusel Start*/
 .slider{
   width: 98.9vw;
   height: 100vh;
@@ -232,133 +179,11 @@ p {
   display: inline-block;
   z-index: 6;
   vertical-align: middle;
-  color: #fff;
 }
 /*Carrusel end*/
 
 
-/*description section start*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------------testimonial section start----------------*/
-.testimonial-section {
-  padding: 120px 0 0 0;
-  min-height: 100vh;
-  background-color: var(--main-blue);
-}
-.testimonial-container {
-  background-color: var(--main-white);
-  border-radius: 15px;
-  margin: 20px auto;
-  padding: 50px 80px;
-  max-width: 768px;
-  position: relative;
-}
-.testimonial-container p {
-  padding-bottom: 30px;
-  color: var(--main_black)
-}
-.fa-quote {
-  color: var(--main_dark-blue);
-  font-size: 28px;
-  position: absolute;
-  top: 70px;
-}
-.fa-quote-right {
-  left: 40px;
-}
-.fa-quote-left {
-  right: 40px;
-}
-.testimonial {
-  line-height: 28px;
-  text-align: justify;
-}
-.user {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.user .user-image {
-  border-radius: 50%;
-  height: 75px;
-  width: 75px;
-  object-fit: cover;
-}
-.user .user-details {
-  margin: 30px 0 0 40px;
-}
-.user .username {
-  margin: 0;
-  color: var(--main_dark-blue);
-  font-weight: bold;
-}
-.user .role {
-  font-weight: normal;
-  margin: 10px 0;
-}
-.progress-bar-testimonial {
-  background-color: #1F1E74;
-  height: 4px;
-  width: 100%;
-  animation: grow 10s linear infinite;
-  transform-origin: left;
-}
-@keyframes grow {
-  0% {
-    transform: scaleX(0);
-  }
-}
-@media (max-width: 768px) {
-  .testimonial-container {
-    padding: 20px 30px;
-  }
-  .fa-quote {
-    display: none;
-  }
-}
-.container{
-  max-width: 1140px;
-  margin:auto;
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-/*----------------testimonial section end----------------*/
+/*Codifo muertooooooooooooooooo
 /*----------------about section start----------------*/
 .about-section{
   padding: 80px 0 0;
