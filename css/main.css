@@ -25,16 +25,34 @@ html {
 section[id]{
   scroll-margin-top: 85px;
 }
+/*Configuracion todos los botones*/
+button{
+  cursor:pointer;
+}
+.btn{
+  padding: 9px 25px;
+  background-color: #FAE915;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+button.btn:hover{
+background-color: #fff;
+color: #1F1E74;
+transform: scale(1.1);
+}
 /*Inicio de mejorar*/
 /*NAV*/
 .navBarra {
-  position: fixed;
+  /*position: fixed;*/
   background-color: #3e3bc4;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  width: 100vw;
+  width: 100%;
   padding: 5px 10%;
   z-index: 999;
   & div.logo img{
@@ -61,22 +79,8 @@ section[id]{
       transform: scale(1.1);
     }
   }
-  & button{
-    padding: 9px 25px;
-    background-color: #FAE915;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    transition: all 0.3s ease 0s;
-  }
-  & button:hover{
-    background-color: #fff;
-    color: #1F1E74;
-    transform: scale(1.1);
-  }
 }
+
 
 
 
@@ -87,146 +91,87 @@ section[id]{
 
 
 /*Carrusel Start*/
-
-.active{
-  background-color: #09870d;
-}
-.slider{
+section.slider{
   width: 98.9vw;
   height: 100vh;
-  margin: auto;
   position: relative;
   overflow: hidden;
-}
-.slider .list{
-  position:absolute;
-  width: max-content;
-  height: 1000px;
-  left: 0;
-  top: 0;
-  display: flex;
-  transition: 1s;
-}
-.slider .list img{
-  width: 100vw;
-  max-width: 100vw;
-  height: 100vh;
-}
-.slider .buttons{
-  position: absolute;
-  top: 45%;
-  left: 5%;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
-}
-.slider .buttons button{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff5;
-  color: #fff;
-  border: none;
-  font-family: monospace;
-  font-weight: bold;
-  z-index: 9;
-}
-.slider .dots{
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  color: #fff;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-z-index: 8;
-}
-.slider .dots li{
-  list-style: none;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  margin: 10px;
-  border-radius: 20px;
-  transition: 0.5s;
-  z-index: 7;
-}
-.slider .dots li.active{
-  width: 30px;
-}
-@media screen and (max-width: 768px){
-  .slider{
-      height: 400px;
+  & article.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    z-index: 1;
+    padding: 150px 20%;
+    & p {
+      z-index: 6;
+      padding: 60px 0px;
+      font-size: 45px;
+      color: #fff;
+    }
+    & button{
+      margin: 30px 20px;
+      font-size: 30px;
+    }
+  }
+  & div.list{
+    position:absolute;
+    width: max-content;
+    display: flex;
+    transition: 2s;
+    & img{
+      width: 100vw;
+      max-width: 100vw;
+      height: 100vh;
+    }
+  }
+  & div.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    & button{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff5;
+      color: #fff;
+      border: none;
+      font-family: monospace;
+      font-weight: bold;
+      z-index: 9;
+    }
+  }
+  & ul.dots{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 8;
+    & li{
+      list-style: none;
+      width: 10px;
+      height: 10px;
+      padding: 10px;
+      background-color: #fff;
+      margin: 10px;
+      border-radius: 20px;
+      transition: 0.5s;
+      z-index: 7;
+      cursor: pointer;
+    }
   }
 }
-.slider .cover{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.751);
-  align-items: center;
-  z-index: 1;
-  justify-content: center;
-  padding: 5px 10%;
-  display: table-cell;
-  vertical-align: middle;
-  align-items: center;
+
+.slider .dots li.active{ /*animacion de agrandar los puntos*/
+  width: 50px;
+  background-color: #06A241;
 }
-p {
-  display: inline-block;
-  z-index: 6;
-  vertical-align: middle;
-}
+
 /*Carrusel end*/
 
 
-/*Codifo muertooooooooooooooooo
-/*----------------about section start----------------*/
-.about-section{
-  padding: 80px 0 0;
-  min-height: 100vh;
-}
-.about-section .about-img{
-  flex:0 0 40%;
-  max-width: 40%;
-  padding:0 15px;
-}
-.about-section .about-img .img-box{
-  padding: 15px;
-  border-radius: 5px;
-}
-.about-section .about-img .img-box img{
-  width: 100%;
-  border:10px solid transparent;
-  border-radius: 5px;
-  background-color: white;
-}
-.about-section .about-img .social-links{
-  margin-top:20px;
-  text-align: center;
-}
-.about-section .about-img .social-links a{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  font-size: 16px;
-  text-align: center;
-  color: #09870d;
-  margin:0 4px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-.about-section .about-img .social-links a i{
-  line-height: 40px;
-  font-size: 27px;
-}
-.about-section .about-img .social-links a:after{
-  border-radius: 50%;
-}
-.about-section .about-img .social-links a:hover{
-  color: #1F1E74;
-}
-/*----------------about section start----------------*/

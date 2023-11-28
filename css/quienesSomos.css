@@ -27,16 +27,6 @@
             font-weight: bold;
           }
         }
-      & button.btn{
-        padding: 9px 25px;
-        background-color: #FAE915;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: bold;
-        transition: all 0.3s ease 0s;
-      }
     }
     & div.band-section {
       display: flex; 
