@@ -8,7 +8,7 @@
     & article.description {
       grid-area: Article;
       text-align: center;
-      padding: 50px;
+      padding: 200px 10px;
       & h2 {
         display: inline-block;
         font-size: 30px;
@@ -72,7 +72,7 @@
       transform: translateY(0);
     }
     100% {
-      transform: translateY(calc(-10vh * 7));
+      transform: translateY(calc(-10vh * 6));
     }
   }
   
@@ -82,7 +82,7 @@
     }
   
     100% {
-      transform: translateY(calc(10vh * 7));
+      transform: translateY(calc(10vh * 6));
     }
   }
 /*Hacer Responsive con grid*/
