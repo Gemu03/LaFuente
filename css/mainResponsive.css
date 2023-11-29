@@ -3,15 +3,19 @@
   html,
   body{
     width: 100vw;
-    overflow: hidden;
-
+    overflow-x: hidden;
   }
   section.cards{
     flex-direction: column;
-    height: 180vh;
-    padding: 5vh 0;
+    height: 130vh;
+    padding: 5vh 10vw;
     & div{
-      height: 30vh;
+      min-width: 80vw;
+      max-height: 40vh;
+    }
+    & button.contacto{
+      padding-top: 0px;
     }
   }
+
 }
