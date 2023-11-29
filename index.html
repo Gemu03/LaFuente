@@ -6,72 +6,80 @@
   <meta name="author" content="Esteban Moreno">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Egresados IERD La Fuente</title>
-  <link rel="stylesheet" href="css/main.css"> <!-- ? Añadir todas las hojas de Estilos que se requieran -->
+  <!-- ? Añadir todas las hojas de Estilos que se requieran -->
   <link rel="stylesheet" href="css/mainResponsive.css"> <!-- ? Añadir todas las hojas de Estilos que se requieran -->
   <link rel="stylesheet" href="css/contact&footer.css">
+  <link rel="stylesheet" href="css/main.css"> 
+  <link rel="stylesheet" href="css/quienesSomos.css">
+  <link rel="stylesheet" href="css/testimonios.css">
+  
+  
   <link rel="icon" type="image/png" href="./assets/img/LaFuenteLogo.png">
   <!-- ? Fuentes -->
   <script src="https://kit.fontawesome.com/603d097ec5.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><!-- font awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- font awesome -->
 </head>
 
 <body>
 
   <!-- header start -->
-  <header class="nav">
+  <header class="navBarra">
     <div class="logo">
       <img src="./assets/img/LaFuenteLogo.png" alt="Logo del colegio la fuente">
     </div>
     <nav>
-      <ul class="nav-links">
+      <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#quienes-somos">¿Quienes Somos?</a></li>
         <li><a href="#testimonio">Testimonios</a></li>
-        <li><a href="#footerparte1">Contacto</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-    <a href="#" class="btn"><button>Busqueda</button></a>
+    <a href="#"><button class="btn">Busqueda</button></a>
   </header>
   <!-- header end -->
-  
   <!-- Slider start-->
-  <div class="slider" id="inicio">
+  <section class="slider" id="inicio">
     <article class="cover">
-      <h1>Hola</h1>
-      <a href=""><button>Busqueda</button></a>  
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias tenetur labore velit, debitis officiis ex repellat obcaecati aut earum accusamus non ab minima consequuntur quo eaque at neque pariatur mollitia quasi illum, veniam repudiandae. Nihil ab minima dolores reprehenderit. Veritatis delectus accusamus, velit tempore atque perspiciatis sint optio nihil.</p>
+      <p>"Formamos líderes del mañana, impulsados por la investigación,
+        agentes de cambio, y promotores del progreso y bienestar."</p>
+      <p>Egresados IERD La Fuente</p>
+      <a href=""><button class="btn">Saber más</button></a>
     </article>
     <div class="list">
-        <div class="item">
-            <img src="./assets/img/carrusel/1.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="/assets/img/carrusel/2.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="/assets/img/carrusel/3.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="/assets/img/carrusel/4.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="/assets/img/carrusel/5.jpg" alt="">
-        </div>
+      <div class="item">
+        <img src="./assets/img/carrusel/1.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="/assets/img/carrusel/2.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="/assets/img/carrusel/3.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="/assets/img/carrusel/4.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="/assets/img/carrusel/5.jpg" alt="">
+      </div>
     </div>
     <div class="buttons">
-        <button id="prev"><</button>
-        <button id="next">></button>
+      <button id="prev">
+        <</button>
+          <button id="next">></button>
     </div>
     <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
 </div>
+  </section>
 
 <!--Cardsss-->
 <section class="cards" id="cards">
@@ -92,72 +100,72 @@
   </div>
 </section>
 
-
-<!-- description section start -->
-<section class="description_main" id="quienes-somos">
-  
-  <article class="description_texts">
-
-    <h1 class="description_title">"¿Quienes somos?"</h1>
-    <p class="description_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ab possimus sunt animi
-      magni cupiditate!</p>
-    <a href="#" class="description_btn"><button>Busqueda</button></a>
-    </div>
-  </article>
-  <div class="band-section">
-    <div class="band left-band">
-      <div class="band-track1">z
-        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+  <!--empieza john-->
+  <!-- description section start (quienes somos)-->
+  <section class="description-main" id="quienes-somos">
+    <article class="description">
+      <h2 data-heading="testimonial">¿Quienes Somos?</h2>
+      <p><span>Egresados de La Fuente: </span>Líderes con visión, agentes de transformación.</p>
+      <button class="btn">Saber más</button>
+    </article>
+    <div class="band-section">
+      <div class="band left-band">
+        <div class="band-track1">
+          <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="band right-band">
+        <div class="band-track2">
+          <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
+          <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
+        </div>
       </div>
     </div>
-    <div class="band right-band">
-      <div class="band-track2">
-        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/1.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/2.jpg" alt=""></div>
-        <div class="band"><img src="./assets/img/carrusel/3.jpg" alt=""></div>
-      </div>
-    </div>
-  </div>
   </section>
-
+  <!-- description section end -->
 
   <!-- testimonial section start -->
-  <div class="testimonial-section section" id="testimonio">
+  <section class="testimonial-section section" id="testimonio">
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2 data-heading="testimonial">Client Speak</h2>
+          <h2 data-heading="testimonial">Comentarios de Egresados</h2>
         </div>
         <div class="testimonial-container outer-shadow">
           <div class="progress-bar-testimonial"></div>
           <div class="fas fa-quote-right fa-quote"></div>
           <div class="fas fa-quote-left fa-quote"></div>
           <p class="testimonial">
-            I've worked with literally hundreds of HTML/CSS developers and I have to
-            say the top spot goes to this guy. This guy is an amazing developer. He
-            stresses on good, clean code and pays heed to the details. I love
-            developers who respect each and every aspect of a throughly thought out
-            design and do their best to put it in code.
+            Hola. saludos, mi opinion sobre el colegio es
+            que tiene muy buen manejo educativo, 
+            es un lugar agradable para un estudiante
+            al igual que la compañia y enseñanzas de 
+            los profesore, que hacen un rol importante 
+            en la institucion, mi experiencia sin duda es 
+            todos los momentos que pude estar con la banda 
+            de marchas del profesor gonzalo es una experiencia 
+            inolvidable.
           </p>
           <div class="user">
-            <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="user" class="user-image" />
+            <img src="assets/img/fotosComentarios/AngiePaola.jpg" alt="user" class="user-image" />
             <div class="user-details">
-              <h4 class="username">Elizabeth Gutierrez</h4>
-              <p class="role">Lawyer - Prochampions S.A.S.</p>
+              <h4 class="username">ANGIE PAOLA LEON GOMEZ</h4>
+              <p class="role">Egresada</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- testimonial section end -->
 
 
@@ -167,7 +175,7 @@
 
 
     <!--contact section-->
-    <section class="contact_section">
+    <section class="contact_section" id="contacto">
       <div class="map">
         <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.615190162748!2d-73.94231368862515!3d5.003404094951994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40718b327aa6a7%3A0xbb88b20bb6f3da8f!2sColegio%20La%20Fuente!5e0!3m2!1ses-419!2sco!4v1699670622074!5m2!1ses-419!2sco" 
@@ -228,5 +236,6 @@
 
 
 </body>
+<script src="js/script.js"></script> <!-- ? Añadir todos los js que se requieran -->
 
 </html>

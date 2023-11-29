@@ -22,7 +22,7 @@ Contact
     & form {
     display: grid;
     gap: 15px;
-    color: white;
+    color: black;
     font-weight: bold;
     }
     & .formContacto{
@@ -33,6 +33,7 @@ Contact
     & input,
     textarea {
     padding: 10px;
+    border-radius: 10px;
     }
     & button {
     background-color: #3498db;
@@ -151,6 +152,7 @@ footer{
     padding: 30px;
     & p{
     font-size: 15px;
+    color:white;
     }
     & .conexiones{
     display: flex;

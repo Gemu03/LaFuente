@@ -1,0 +1,88 @@
+/*----------------testimonial section start----------------*/
+section.testimonial-section {
+    padding: 120px 0 0 0;
+    min-height: 100vh;
+    background-color: var(--main-blue);
+    & div.section-title {
+      padding: 0 15px;
+      text-align: center;
+      & h2{
+        font-size: 30px;
+        font-weight: 700px;
+        color: var(--main_black);
+        text-transform: uppercase;
+      }
+    }
+    & div.testimonial-container {
+      background-color: var(--main-white);
+      border-radius: 20px;
+      margin: 20px auto;
+      padding: 50px 80px;
+      max-width: 768px;
+      position: relative;
+      & p{
+        padding-bottom: 30px;
+        color: var(--main_black);
+        line-height: 28px;
+      }
+      & div.user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img.user-image {
+          border-radius: 50%;
+          height: 75px;
+          width: 75px;
+          object-fit: cover;
+        }
+        & div.user-details{
+          margin: 30px 0 0 40px;
+          & h4{
+            color: var(--main_dark-blue);
+            font-weight: bold;
+          }
+          & p{
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  
+  }
+  
+  .progress-bar-testimonial { /*barra de progreso*/
+    background-color: #1F1E74;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+  }
+  .fa-quote {/*Comillas*/
+    color: var(--main_dark-blue);
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+  }
+  .fa-quote-right {/*Comillas*/
+    left: 40px;
+  }
+  .fa-quote-left {/*Comillas*/
+    right: 40px;
+  }
+  @keyframes grow { /*funcion*/
+    0% {
+      transform: scaleX(0);
+    }
+  }
+  @media (max-width: 768px) {
+    .testimonial-container {
+      padding: 20px 30px;
+    }
+    .fa-quote {
+      display: none;
+    }
+  }
+  
+  /*----------------testimonial section end----------------*/
+  
+  

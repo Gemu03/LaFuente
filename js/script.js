@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-/*Carrusel Start*/
+//Carrusel Start
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
@@ -25,17 +18,13 @@ prev.onclick = function(){
 let refreshInterval = setInterval(()=> {next.click()}, 3000);
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
-    // 
     let last_active_dot = document.querySelector('.slider .dots li.active');
     last_active_dot.classList.remove('active');
     dots[active].classList.add('active');
 
     clearInterval(refreshInterval);
     refreshInterval = setInterval(()=> {next.click()}, 3000);
-
-    
 }
-
 dots.forEach((li, key) => {
     li.addEventListener('click', ()=>{
          active = key;
@@ -45,32 +34,46 @@ dots.forEach((li, key) => {
 window.onresize = function(event) {
     reloadSlider();
 };
+//Carrusel end
+// testimonial section start
+const testimonialsContainer = document.querySelector('.testimonials-container')
+const testimonial = document.querySelector('.testimonial')
+const userImage = document.querySelector('.user-image')
+const username = document.querySelector('.username')
+const role = document.querySelector('.role')
 
-/*Carrusel end*/
+const testimonials = [
+  {
+    name: 'Cristian Timarán',
+    position: 'Egresado',
+    photo: 'https://randomuser.me/api/portraits/men/97.jpg',
+    text:
+      "En el colegio La Fuente, se fomenta el trabajo en equipo y la colaboración entre sus estudiantes, lo cual me enseñó la importancia de unir fuerzas con mis compañeros para lograr avanzar en nuestro aprendizaje. Esta lección hoy en día ha sido fundamental para mi trayectoria profesional. Además de ofrecer una sólida base académica, el colegio me inculcó valores fundamentales como la solidaridad, el respeto y la responsabilidad. Todo esto enmedio de un entorno de aprendizaje enriquecedor y estimulante, donde los profesores se preocupaban verdaderamente por el éxito de sus estudiantes." 
+  },
+  {
+    name: 'MARY LUZ SANCHEZ DIAZ',
+    position: 'Egresada',
+    photo: "assets/img/fotosComentarios/MaryLuz.jpg",
+    text:
+      "Mi colegio la Fuente el mejor. En el aprendi hacer una mujer disciplinada, Responsable y llena de valores. Después que salí del colegio he aplicada cada uno de ellos y hoy me siento feliz y orgullosa de ser un gran elemento para la Sociedad. Llena de mucho valores y virtudes." 
+    },
+]
 
+let idx = 1
 
-/*Mapa google maps */
-function iniciarMap(){
-    var coord = {lat:-73.9035862,lng: -73.92048};
-    var map = new google.maps.Map(document.getElementById('map'),{
-    zoom: 10,
-    center: coord
-    });
-    var marker = new google.maps.Marker({
-      position: coord,
-      map: map
-    });
+function updateTestimonial() {
+  const { name, position, photo, text } = testimonials[idx]
+
+  testimonial.innerHTML = text
+  userImage.src = photo
+  username.innerHTML = name
+  role.innerHTML = position
+
+  idx++
+
+  if (idx > testimonials.length - 1) {
+    idx = 0
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+setInterval(updateTestimonial, 10000);
+// testimonial section end
