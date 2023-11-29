@@ -1,0 +1,17 @@
+/* Responsive cards */
+@media (max-width: 920px){
+  html,
+  body{
+    width: 100vw;
+    overflow: hidden;
+
+  }
+  section.cards{
+    flex-direction: column;
+    height: 180vh;
+    padding: 5vh 0;
+    & div{
+      height: 30vh;
+    }
+  }
+}
