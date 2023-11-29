@@ -1,0 +1,44 @@
+/* Responsive cards */
+@media (max-width: 1000px){
+  html,
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  section.cards{
+    flex-direction: column;
+    height: 130vh;
+    padding: 5vh 10vw;
+    & div{
+      min-width: 80vw;
+      max-height: 40vh;
+    }
+    & button.contacto{
+      padding-top: 0px;
+    }
+  }
+  header.nav{
+    height: 10vh;
+    justify-content: center;
+    & .logo img{
+      display: none;
+    }
+    & .nav-links>li>a{
+      font-size: 13px;
+      min-width: 40%;
+    }
+    & ul.nav-links{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    & a.btn{
+      display: none;
+    }
+  }
+  button{
+    scale: 0.7;
+    color: black;
+  }
+}
