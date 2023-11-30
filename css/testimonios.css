@@ -77,10 +77,18 @@ section.testimonial-section {
   }
   @media (max-width: 768px) {
     .testimonial-container {
-      padding: 20px 30px;
+      padding: 50px;
+      width: 90%;
+    }
+    .testimonial {
+      font-size: 4vw;
     }
     .fa-quote {
       display: none;
+    }
+    .user-image {
+      width: 100%; 
+      height: auto; 
     }
   }
   
