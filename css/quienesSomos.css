@@ -86,3 +86,9 @@
     }
   }
 /*Hacer Responsive con grid*/
+@media screen and (max-width: 795px ){
+    .description-main article.description{
+      padding: 100px 10px;
+      font-size: 10px;
+    }
+}

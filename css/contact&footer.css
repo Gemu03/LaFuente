@@ -57,7 +57,7 @@ Responsive contact
     }
     .contact_section{
     grid-template: 
-    "Mapa" 700px
+    "Mapa" 400px
     "Formulario" auto /
     auto;
     }
