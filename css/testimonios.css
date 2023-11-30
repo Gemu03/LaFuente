@@ -2,6 +2,7 @@
 section.testimonial-section {
     padding: 120px 0 0 0;
     min-height: 100vh;
+    min-width: 300px;
     background-color: var(--main-blue);
     & div.section-title {
       padding: 0 15px;
@@ -76,10 +77,18 @@ section.testimonial-section {
   }
   @media (max-width: 768px) {
     .testimonial-container {
-      padding: 20px 30px;
+      padding: 50px;
+      width: 90%;
+    }
+    .testimonial {
+      font-size: 4vw;
     }
     .fa-quote {
       display: none;
+    }
+    .user-image {
+      width: auto; 
+      height: auto; 
     }
   }
   
