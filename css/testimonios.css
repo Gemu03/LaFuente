@@ -2,6 +2,7 @@
 section.testimonial-section {
     padding: 120px 0 0 0;
     min-height: 100vh;
+    min-width: 300px;
     background-color: var(--main-blue);
     & div.section-title {
       padding: 0 15px;
