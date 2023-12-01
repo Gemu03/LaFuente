@@ -79,7 +79,9 @@ section.testimonial-section {
   @media (max-width: 768px) {
     section.testimonial-section{
       padding: 20px 0 10px 0;
-      height: auto;
+      height: 50vh;
+      min-height: 50vh;
+
       /*mirar el height*/
       & div.section-title h2{
         font-size: 25px;
