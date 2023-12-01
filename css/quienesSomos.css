@@ -31,9 +31,8 @@
     & div.band-section {
       display: flex; 
       grid-area: Band-section;
-      justify-content: space-between;
       flex: 0.5;
-      padding: 20px;
+      padding: 100px 50px 0 0;
       box-sizing: border-box;
       & div.left-band div.band-track1 {/*Animacion de la izquierda*/
         animation: scroll-up 0.1s linear infinite;
@@ -55,7 +54,7 @@
   
   .band {
     width: 30vw;
-    height: 95vh;
+    height: 80vh;
     padding: 10px;
     overflow: hidden;
     display: flex;
@@ -87,8 +86,57 @@
   }
 /*Hacer Responsive con grid*/
 @media screen and (max-width: 795px ){
-    .description-main article.description{
-      padding: 100px 10px;
-      font-size: 10px;
-    }
+    .description-main{
+      height: auto;
+      grid-template: 
+      "Article" 250px
+      "Band-section" auto/
+      auto;
+      & div.band-section{
+        justify-content: center;
+        padding: 0;
+      }
+      & article.description{
+      padding: 40px 10px 0 10px;
+      & p{
+        font-size: 20px;
+        & span{
+          font-size: 25px;
+        }
+      }
+  }
 }
+.band {
+  width: 40vw;
+  height: 50vh;
+} 
+@media screen and (max-width: 495px ){
+    .band {
+    width: 20vh;
+    height: 30vh;
+    }
+    .description-main div.band-section{
+      padding-bottom: 50px;
+    } 
+  }
+}
+@media screen and (max-width: 355px ){
+  .band {
+  width: 15vh;
+  height: 25vh;
+  }
+  .description-main{
+    & article.description{
+      & h2{
+        font-size: 25px;
+      }
+      & p{
+        font-size: 15px;
+        & span{
+          font-size: 20px;
+        }
+      }
+  }
+  } 
+}
+
