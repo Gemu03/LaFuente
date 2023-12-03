@@ -79,7 +79,7 @@ section.testimonial-section {
   @media (max-width: 768px) {
     section.testimonial-section{
       padding: 20px 0 10px 0;
-      height: 50vh;
+      height: auto;
       min-height: 50vh;
 
       /*mirar el height*/

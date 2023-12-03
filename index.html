@@ -83,20 +83,20 @@
 
 <!--Cardsss-->
 <section class="cards" id="cards">
-  <div class="description_img">
+  <div class="description_img" onclick="window.open('http://google.com', '_blank');">
     <h3>Queremos saber de ti</h3>
     <p>Actualiza tus datos en el siguiente formulario</p>
     <button class="contacto">Contacto</button>
   </div>
-  <div class="description_img">
+  <div class="description_img" onclick="window.open('https://www.tocancipa-cundinamarca.gov.co/nuestra-alcaldia/dependencias/secretaria-educacion/programas-areas/foest', '_blank');">
     <h3>Intermediación académica</h3>
     <p>Consulta oportunidades de financiación académica.</p>
     <button class="contacto">Contacto</button>
   </div>
-  <div class="description_img">
+  <div class="description_img" onclick="window.open('http://google.com', '_blank');">
     <h3>Intermediación laboral</h3>
     <p>Encuentra empleo</p>
-    <button class="contacto">Contacto</button>
+    <a href="http://google.com" target="_blank"><button class="contacto">Contacto</button></a>
   </div>
 </section>
 
@@ -168,14 +168,14 @@
   </section>
   <!-- testimonial section end -->
     <!--contact section-->
-    <section class="contact_section" id="contacto">
+    <section class="contact_section">
       <div class="map">
         <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.615190162748!2d-73.94231368862515!3d5.003404094951994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40718b327aa6a7%3A0xbb88b20bb6f3da8f!2sColegio%20La%20Fuente!5e0!3m2!1ses-419!2sco!4v1699670622074!5m2!1ses-419!2sco" 
         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-      <div class="formulario-container">
+      <div class="formulario-container" id="contacto">
         <h2 class="formContacto">Formulario de Contacto</h2>
         <form id="formulario-contacto">
             <label for="nombre">Nombre Completo:</label>

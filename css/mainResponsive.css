@@ -50,23 +50,61 @@
     scale: 0.7;
     color: black;
   }
+  section.slider article.cover p {
+    font-size: 28px !important;
+  }
+  
+  section.slider article.cover button {
+    font-size: 28px !important;
+  }
 }
 
 
 
 
 @media (max-width: 500px){
-  body > header > a > button{
+  body > header > a > button{ /*desaparece boton*/
     display: none;
   }
 
-  #inicio > article > p:nth-child(1){
-    font-size: 1.4rem;
+  header.navBarra{
+    height: auto;
+    & nav ul {
+      display: flex;
+      justify-content: center; /* Centrar elementos horizontalmente */
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
-
+  section.slider{
+    height: 80vh !important;
+    & article.cover p {
+      font-size: 18px !important;
+    }
+    & article.cover button {
+      font-size: 18px !important;
+    }
+  }
   ul.dots{
     right: 0;
     flex-direction: column;
-    bottom: 50vh;
+    & li{
+      width: 8px !important;
+      height: 8px !important;
+      padding: 8px !important;
+      margin: 8px !important;
+    }
+  }
+  .slider .dots li.active{ /*animacion de agrandar los puntos*/
+    width: 30px !important;
+  }
+}
+/* Responsive vertical */
+@media screen and (max-height: 790px) {
+  section.cards > div {
+    cursor: pointer;
+    & a {
+      display: none;
+    }
   }
 }
