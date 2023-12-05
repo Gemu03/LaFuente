@@ -100,7 +100,7 @@
   }
 }
 /* Responsive vertical */
-@media screen and (max-height: 790px) {
+@media screen and (max-height: 790px) and (max-width:1000px) {
   section.cards > div {
     cursor: pointer;
     & a {
