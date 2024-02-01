@@ -16,15 +16,21 @@
     & button.contacto{
       padding-top: 0px;
     }
+    & div.description_img h3{
+      font-size: 1.5rem;
+    }
+    & div.description_img p{
+      font-size: 0.8rem;
+    }
   }
-  header.nav{
+  header.navBarra{
     height: 10vh;
     justify-content: center;
     & .logo img{
       display: none;
     }
     & .nav-links>li>a{
-      font-size: 13px;
+      font-size: 10px;
       min-width: 40%;
     }
     & ul.nav-links{
@@ -36,9 +42,69 @@
     & a.btn{
       display: none;
     }
+    & nav > ul > li > a{
+      font-size: 14px;
+    }
   }
   button{
     scale: 0.7;
     color: black;
+  }
+  section.slider article.cover p {
+    font-size: 28px !important;
+  }
+  
+  section.slider article.cover button {
+    font-size: 28px !important;
+  }
+}
+
+
+
+
+@media (max-width: 500px){
+  body > header > a > button{ /*desaparece boton*/
+    display: none;
+  }
+
+  header.navBarra{
+    height: auto;
+    & nav ul {
+      display: flex;
+      justify-content: center; /* Centrar elementos horizontalmente */
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  section.slider{
+    height: 80vh !important;
+    & article.cover p {
+      font-size: 18px !important;
+    }
+    & article.cover button {
+      font-size: 18px !important;
+    }
+  }
+  ul.dots{
+    right: 0;
+    flex-direction: column;
+    & li{
+      width: 8px !important;
+      height: 8px !important;
+      padding: 8px !important;
+      margin: 8px !important;
+    }
+  }
+  .slider .dots li.active{ /*animacion de agrandar los puntos*/
+    width: 30px !important;
+  }
+}
+/* Responsive vertical */
+@media screen and (max-height: 790px) and (max-width:1000px) {
+  section.cards > div {
+    cursor: pointer;
+    & a {
+      display: none;
+    }
   }
 }

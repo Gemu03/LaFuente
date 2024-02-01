@@ -56,7 +56,14 @@ const testimonials = [
     photo: "assets/img/fotosComentarios/MaryLuz.jpg",
     text:
       "Mi colegio la Fuente el mejor. En el aprendi hacer una mujer disciplinada, Responsable y llena de valores. Después que salí del colegio he aplicada cada uno de ellos y hoy me siento feliz y orgullosa de ser un gran elemento para la Sociedad. Llena de mucho valores y virtudes." 
-    },
+  },
+  {
+    name:"ANGIE PAOLA LEON GOMEZ",
+    position:"Egresada",
+    photo:"assets/img/fotosComentarios/AngiePaola.jpg",
+    text:
+    "Hola. saludos, mi opinion sobre el colegio es que tiene muy buen manejo educativo, es un lugar agradable para un estudiante al igual que la compañia y enseñanzas de los profesore, que hacen un rol importante en la institucion, mi experiencia sin duda es todos los momentos que pude estar con la banda de marchas del profesor gonzalo es una experiencia inolvidable."
+  }
 ]
 
 let idx = 1
