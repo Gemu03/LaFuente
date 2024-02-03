@@ -82,5 +82,5 @@ function updateTestimonial() {
     idx = 0
   }
 }
-setInterval(updateTestimonial, 10000);
+setInterval(updateTestimonial, 30000);
 // testimonial section end

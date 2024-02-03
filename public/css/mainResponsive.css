@@ -108,3 +108,18 @@
     }
   }
 }
+@media screen and (max-height: 1400px) and (min-height: 800px) and (max-width: 1000px){
+  section.slider div.list img{
+        height:60vh !important;
+      }
+  section.slider, section.cards, section.testimonial-section
+  {
+    height: 60vh !important;
+  }
+  section.cards > div {
+    cursor: pointer;
+    & a {
+      display: none;
+    }
+  }
+}

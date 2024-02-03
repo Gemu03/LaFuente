@@ -33,6 +33,7 @@
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cardsp">Convocatorias</a></li>
         <li><a href="#quienes-somos">¿Quienes Somos?</a></li>
         <li><a href="#testimonio">Testimonios</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -82,7 +83,7 @@
   </section>
 
 <!--Cardsss-->
-<section class="cards" id="cards">
+<section class="cards" id="cardsp">
   <div class="description_img" onclick="window.open('http://google.com', '_blank');">
     <h3>Queremos saber de ti</h3>
     <p>Actualiza tus datos en el siguiente formulario</p>
@@ -134,7 +135,7 @@
   <!-- description section end -->
 
   <!-- testimonial section start -->
-  <section class="testimonial-section section" id="testimonio">
+  <section class="testimonial-section" id="testimonio">
     <div class="container">
       <div class="row">
         <div class="section-title">
@@ -179,16 +180,16 @@
         <h2 class="formContacto">Formulario de Contacto</h2>
         <form action="https://formsubmit.co/soyegresadolafuente.tocancipa@gmail.com" method="POST" id="formulario-contacto">
             <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
             <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" placeholder="Escribe un correo funcional para contactarte" name="email" required>
 
             <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
+            <input type="tel" id="telefono" placeholder="Escribe un telefono para contactarte" name="telefono">
 
             <label for="mensaje">Mensaje para nosotros:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="En este espacio puedes escribir tus sugerencias,  reclamos o ideas que tengas para mejorar nuestro  sitio web. Hazlo con responsabilidad y respeto."></textarea>
 
             <button type="submit">Enviar Mensaje</button>
         </form>

@@ -55,7 +55,7 @@ section.testimonial-section {
     background-color: #1F1E74;
     height: 4px;
     width: 100%;
-    animation: grow 10s linear infinite;
+    animation: grow 30s linear infinite;
     transform-origin: left;
   }
   .fa-quote {/*Comillas*/
