@@ -15,12 +15,13 @@
     }
     & button.contacto{
       padding-top: 0px;
+      display: none;
     }
     & div.description_img h3{
-      font-size: 1.5rem;
+      font-size: 20px;
     }
     & div.description_img p{
-      font-size: 0.8rem;
+      font-size: 15px;
     }
   }
   header.navBarra{
@@ -77,12 +78,18 @@
     }
   }
   section.slider{
-    height: 80vh !important;
-    & article.cover p {
-      font-size: 18px !important;
+    height: 60vh !important;
+    & article.cover {
+      margin: 10% 0 0 0;
+      & p {
+        font-size: 15px !important;
+      }
+      & button {
+        font-size: 15px !important;
+      }
     }
-    & article.cover button {
-      font-size: 18px !important;
+    & div.list img{
+      height: 60vh !important;
     }
   }
   ul.dots{
@@ -103,16 +110,10 @@
 @media screen and (max-height: 790px) and (max-width:1000px) {
   section.cards > div {
     cursor: pointer;
-    & a {
-      display: none;
-    }
   }
 }
 @media screen and (max-height: 1400px) and (min-height: 800px) and (max-width: 1000px){
-  section.slider div.list img{
-        height:60vh !important;
-      }
-  section.slider, section.cards, section.testimonial-section
+  section.cards, section.testimonial
   {
     height: 60vh !important;
   }

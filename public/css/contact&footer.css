@@ -112,20 +112,20 @@ footer{
     background-color: #1F1E74;
     color:#fff;
     & ul.footer_lista1{
-    grid-area: lista1;
-    padding: 0 0 0 30%;
-    border-left: 2px solid #ffffff;
-    display: flex;
-    justify-content:  center;
-    flex-direction: column;
-    list-style-type: none;
-    & li{
-        padding: 15px;
-        & a{
-          color: #fff;  
-          text-decoration: none;
-        }
-    }
+      grid-area: lista1;
+      padding: 0 0 0 20%;
+      border-left: 2px solid #ffffff;
+      display: flex;
+      justify-content:  center;
+      flex-direction: column;
+      list-style-type: none;
+      & li{
+          padding: 15px;
+          & a{
+            color: #fff;  
+            text-decoration: none;
+          }
+      }
     }
     & ul.footer_lista2{
         padding: 0 0 0 10%;
@@ -135,9 +135,12 @@ footer{
         justify-content:  center;
         flex-direction: column;
         list-style-type: none;
-    & li{
-        padding: 10px;
-}
+      & li{
+          padding: 10px;
+        & a{
+          font-size: 15px;
+        }
+      }
     }
     & embed{
     padding: 12% 0 0 0;
@@ -208,6 +211,9 @@ footer{
       & ul.footer_lista2{
         & li{
           font-size: 15px;
+          & a{
+            font-size: 10px;
+          }
         }
       }
       & embed{
@@ -262,12 +268,17 @@ footer{
       & ul.footer_lista1{
         & li{
           padding-right: 5px;
-          font-size: 10px;
+          & a{
+            font-size: 10px;
+          }
         }
       }
       & ul.footer_lista2{
         & li{
           font-size: 10px;
+          & a{
+            font-size: 8px;
+          }
         }
       } 
     }

@@ -1,142 +1,204 @@
 /*Quienes somos */
 .description-main {
-    display: grid;
-    background-color: var(--main-white);
-    height: 100vh;
-    grid-template-areas: 
+  display: grid;
+  background-color: var(--main-white);
+  height: 100vh;
+  grid-template-areas:
     "Article Band-section";
-    & article.description {
-      grid-area: Article;
-      text-align: center;
-      padding: 200px 10px;
-      & h2 {
-        display: inline-block;
-        font-size: 30px;
-        font-weight: 700;
-        color: var(--main_black);
-        text-transform: uppercase;
-        margin: 0;
-      }
-      & p{
-          font-size: 40px;
-          margin: 10px 0;
-          color: #000000;
-          & span{
-            font-size: 40px;
-            color: #1F1E74;
-            font-weight: bold;
-          }
-        }
+
+  & article.description {
+    grid-area: Article;
+    text-align: center;
+    padding: 200px 10px;
+
+    & h2 {
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--main_black);
+      text-transform: uppercase;
+      margin: 30px 0;
     }
-    & div.band-section {
-      display: flex; 
-      grid-area: Band-section;
-      flex: 0.5;
-      padding: 100px 50px 0 0;
-      box-sizing: border-box;
-      & div.left-band div.band-track1 {/*Animacion de la izquierda*/
-        animation: scroll-up 0.1s linear infinite;
-        -webkit-animation: scroll-up 20s linear infinite;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: auto;
-        }
-      & div.right-band div.band-track2 {/*Animacion de la derecha*/
-        animation: scroll-down 0.1s linear infinite;
-        -webkit-animation: scroll-down 20s linear infinite;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        }
+
+    & p {
+      font-size: 40px;
+      margin: 30px 0;
+      color: #000000;
+
+      & span {
+        font-size: 40px;
+        color: #1F1E74;
+        font-weight: bold;
       }
+    }
+
+    & button {
+      margin: 20%;
+      padding: 9px 25px;
+      font-size: 35px;
+    }
   }
-  
-  .band {
-    width: 30vw;
-    height: 80vh;
-    padding: 10px;
-    overflow: hidden;
+
+  & div.band-section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    & img{
-      width: 100%;
-      height: 100%;
+    grid-area: Band-section;
+    flex: 0.5;
+    padding: 100px 50px 0 0;
+    box-sizing: border-box;
+
+    & div.left-band div.band-track1 {
+      /*Animacion de la izquierda*/
+      animation: scroll-up 0.1s linear infinite;
+      -webkit-animation: scroll-up 25s linear infinite;
+      display: flex;
+      flex-direction: column;
+      height: 200vh;
+      width: auto;
+    }
+
+    & div.right-band div.band-track2 {
+      /*Animacion de la derecha*/
+      animation: scroll-down 0.1s linear infinite;
+      -webkit-animation: scroll-down 25s linear infinite;
+      display: flex;
+      flex-direction: column;
+      height: 200vh;
     }
   }
-  
-  @keyframes scroll-up {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(calc(-10vh * 6));
-    }
+}
+
+.band {
+  width: 30vw;
+  height: 80vh;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & img {
+    width: 100%;
+    height: 100%;
   }
-  
-  @keyframes scroll-down {
-    0% {
-      transform: translateY(0);
-    }
-  
-    100% {
-      transform: translateY(calc(10vh * 6));
-    }
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
   }
+
+  100% {
+    transform: translateY(calc(-10vh * 6));
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(calc(10vh * 6));
+  }
+}
+
 /*Hacer Responsive con grid*/
-@media screen and (max-width: 795px ){
-    .description-main{
-      height: auto;
-      grid-template: 
+@media screen and (max-width: 900px) {
+  .description-main {
+    height: auto;
+    grid-template:
       "Article" 250px
       "Band-section" auto/
       auto;
-      & div.band-section{
-        justify-content: center;
-        padding: 0;
+
+    & div.band-section {
+      justify-content: center;
+      padding: 0;
+    }
+
+    & article.description {
+      padding: 0;
+      & h2 {
+        margin-bottom: 10px;
       }
-      & article.description{
-      padding: 40px 10px 0 10px;
-      & p{
+      & p {
         font-size: 20px;
-        & span{
-          font-size: 25px;
+        margin: 10px 0;
+        & span {
+          font-size: 22px;
         }
       }
-  }
-}
-.band {
-  width: 40vw;
-  height: 50vh;
-} 
-@media screen and (max-width: 495px ){
-    .band {
-    width: 20vh;
-    height: 30vh;
-    }
-    .description-main div.band-section{
-      padding-bottom: 50px;
-    } 
-  }
-}
-@media screen and (max-width: 355px ){
-  .band {
-  width: 15vh;
-  height: 25vh;
-  }
-  .description-main{
-    & article.description{
-      & h2{
+      & button {
+        margin: 0%;
+        padding: 9px 25px;
         font-size: 25px;
       }
-      & p{
+    }
+    & p {
+      font-size: 20px;
+      & span {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .band {
+    width: 40vw;
+    height: 50vh;
+  }
+  .description-main div.band-section {
+    padding-bottom: 50px;
+  }
+  & div.band-section {
+    & div.left-band div.band-track1 {
+      height: 150vh !important;
+      width: auto;
+    }
+    & div.right-band div.band-track2 {
+      height: 150vh !important;
+    }
+  }
+}
+  @media screen and (max-width: 495px) {
+    .band {
+      width: 20vh;
+      height: 30vh;
+    }
+
+    .description-main div.band-section {
+      padding-bottom: 50px;
+    }
+    & div.band-section {
+    & div.left-band div.band-track1 {
+      height: 150vh !important;
+      width: auto;
+    }
+    & div.right-band div.band-track2 {
+      height: 150vh !important;
+    }
+  }
+  }
+
+
+@media screen and (max-width: 355px) {
+  .band {
+    width: 15vh;
+    height: 25vh;
+  }
+
+  .description-main {
+    & article.description {
+      & h2 {
+        font-size: 25px;
+      }
+
+      & p {
         font-size: 15px;
-        & span{
+
+        & span {
           font-size: 20px;
         }
       }
+    }
   }
-  } 
 }
-

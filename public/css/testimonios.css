@@ -76,7 +76,7 @@ section.testimonial-section {
     }
   }
   /* Testimonios responsive*/
-  @media (max-width: 768px) {
+  @media (max-width: 828px) {
     section.testimonial-section{
       padding: 20px 0 10px 0;
       height: auto;
